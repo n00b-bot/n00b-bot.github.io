@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Nothing</title>
+        <link>https://example.com/</link>
+        <description>Hugo theme - LoveIt</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Sep 2022 16:12:30 &#43;0700</lastBuildDate>
+            <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>My Data My Choice - P1. ElasticBurp-NG</title>
+    <link>https://example.com/elasticburp-ng-part-1/</link>
+    <pubDate>Sun, 04 Sep 2022 16:12:30 &#43;0700</pubDate>
+    <author>Nothing</author>
+    <guid>https://example.com/elasticburp-ng-part-1/</guid>
+    <description><![CDATA[<h1>New series from 0 to 1k stars 🤡🤡</h1>]]></description>
+</item>
+<item>
+    <title>Cách mà OSCP đã tấu hài với tôi😛</title>
+    <link>https://example.com/oscp/</link>
+    <pubDate>Thu, 16 Jun 2022 15:33:50 &#43;0700</pubDate>
+    <author>Nothing</author>
+    <guid>https://example.com/oscp/</guid>
+    <description><![CDATA[<h1>Lan tỏa tấu hài đi muôn nơi  🙃 🙃</h1>]]></description>
+</item>
+</channel>
+</rss>
