@@ -10,6 +10,7 @@ lightgallery: true
 math:
   enable: true
 ---
+<p align="center"><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fn00b-bot.github.io%2Fabout%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a></p>
 # **Nothing to say**
 <img src="/about/hiking.svg">
 
