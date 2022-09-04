@@ -1,5 +1,5 @@
 baseURL = "https://n00b-bot.github.io/"
-
+publishDir = "docs"
 # theme
 theme = "LoveIt"
 # themes directory
