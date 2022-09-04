@@ -5,6 +5,9 @@ draft: false
 tags: ["OSCP"]
 ---
 <h1>Lan tỏa tấu hài đi muôn nơi  🙃 🙃</h1>
+<p align="center">
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fn00b-bot.github.io%2Foscp%2F&count_bg=%2379C83D&title_bg=%23555555&icon=go.svg&icon_color=%2300F7F4&title=hits&edge_flat=true"/></a>
+</p>
 <!--more-->
 Tôi dự định học OSCP từ tháng 8/2021 nhưng vì một số lý do mà đến tháng 3/2022 tôi mới bắt đầu đăng kí học được. Vì không phải mất tiền(làm gì có bữa trưa nào miễn phí, tôi phải anh bạn à liên tục vào mồm đấy 🤪🤪🤪)  nên tôi đã đăng kí PEN-200 course + 90-days lab access. Theo lịch chính thức khóa học sẽ bắt đầu vào 13/3, nhưng sau khi nghe văn khích của 2 đồng đội ( Sợ à 🙂) tôi đã thay đổi lịch học để bắt đầu sớm hơn. Hành trình tấu hài bắt đầu từ đây(Adventure Time)
 
