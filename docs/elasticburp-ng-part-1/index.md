@@ -112,7 +112,11 @@ Extension có 2 tính năng chính là:
 
 Thử tưởng tượng trong trường hợp bạn gặp 1 request khả nghi dính XSS nhưng chưa tìm được cách bypass và muốn chia sẻ request đấy cho người khác thì đơn giản chỉ cần đưa mã hash của request đấy thay vì phải copy toàn bộ request.
 
-Nếu có bất kỳ lỗi nào trong quá trình sử dụng hay có ý tưởng gì các bạn có thể phản hồi để mình có thể hoàn thiện ElasticBurp-NG
+- Advanced Search
+
+Sử dụng cú pháp KQL giúp nâng cao khả năng tìm kiếm. Tuy nhiên, nếu bạn muốn sử dụng chức năng này thì cần phải cài đặt thêm plugin [QueryBuilderApi](https://github.com/n00b-bot/QueryBuilderApi) trên Kibana
+
+Nếu có bất kỳ lỗi nào trong quá trình sử dụng hay có ý tưởng gì các bạn có thể phản hồi để mình có thể hoàn thiện ElasticBurp-NG.
 
 ## **Install**
 
