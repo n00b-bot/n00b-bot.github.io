@@ -1,18 +1,24 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>ElasticSearch - Tag - Nothing</title>
-        <link>https://n00b-bot.github.io/tags/elasticsearch/</link>
-        <description>ElasticSearch - Tag - Nothing</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Sep 2022 16:12:30 &#43;0700</lastBuildDate><atom:link href="https://n00b-bot.github.io/tags/elasticsearch/" rel="self" type="application/rss+xml" /><item>
-    <title>My Data My Choice - P1. ElasticBurp-NG</title>
-    <link>https://n00b-bot.github.io/elasticburp-ng-part-1/</link>
-    <pubDate>Sun, 04 Sep 2022 16:12:30 &#43;0700</pubDate>
-    <author>Nothing</author>
-    <guid>https://n00b-bot.github.io/elasticburp-ng-part-1/</guid>
-    <description><![CDATA[<h1>New series from 0 to 1k stars 🤡🤡</h1>
-<p align="center">
-<a href="https://hits.seeyoufarm.com"></a>
-</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ElasticSearch on Nothing</title>
+    <link>https://n00b-bot.github.io/tags/elasticsearch/</link>
+    <description>Recent content in ElasticSearch on Nothing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 04 Sep 2022 16:12:30 +0700</lastBuildDate><atom:link href="https://n00b-bot.github.io/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Data My Choice - P1. ElasticBurp-NG</title>
+      <link>https://n00b-bot.github.io/elasticburp-ng-part-1/</link>
+      <pubDate>Sun, 04 Sep 2022 16:12:30 +0700</pubDate>
+      
+      <guid>https://n00b-bot.github.io/elasticburp-ng-part-1/</guid>
+      <description>&lt;h1&gt;New series from 0 to 1k stars 🤡🤡&lt;/h1&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;a href=&#34;https://hits.seeyoufarm.com&#34;&gt;&lt;img src=&#34;https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fn00b-bot.github.io%2Felasticburp-ng-part-1%2F&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=go.svg&amp;icon_color=%2300F7F4&amp;title=hits&amp;edge_flat=true&#34;/&gt;&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

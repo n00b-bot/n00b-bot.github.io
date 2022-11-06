@@ -1,29 +1,45 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>All Posts - Nothing</title>
-        <link>https://n00b-bot.github.io/posts/</link>
-        <description>All Posts | Nothing</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 04 Sep 2022 16:12:30 &#43;0700</lastBuildDate><atom:link href="https://n00b-bot.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>My Data My Choice - P1. ElasticBurp-NG</title>
-    <link>https://n00b-bot.github.io/elasticburp-ng-part-1/</link>
-    <pubDate>Sun, 04 Sep 2022 16:12:30 &#43;0700</pubDate>
-    <author>Nothing</author>
-    <guid>https://n00b-bot.github.io/elasticburp-ng-part-1/</guid>
-    <description><![CDATA[<h1>New series from 0 to 1k stars 🤡🤡</h1>
-<p align="center">
-<a href="https://hits.seeyoufarm.com"></a>
-</p>]]></description>
-</item>
-<item>
-    <title>Cách mà OSCP đã tấu hài với tôi😛</title>
-    <link>https://n00b-bot.github.io/oscp/</link>
-    <pubDate>Thu, 16 Jun 2022 15:33:50 &#43;0700</pubDate>
-    <author>Nothing</author>
-    <guid>https://n00b-bot.github.io/oscp/</guid>
-    <description><![CDATA[<h1>Lan tỏa tấu hài đi muôn nơi  🙃 🙃</h1>
-<p align="center">
-<a href="https://hits.seeyoufarm.com"></a>
-</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Nothing</title>
+    <link>https://n00b-bot.github.io/posts/</link>
+    <description>Recent content in Posts on Nothing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 06 Nov 2022 10:55:32 +0700</lastBuildDate><atom:link href="https://n00b-bot.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AST Injection</title>
+      <link>https://n00b-bot.github.io/ast-injection/</link>
+      <pubDate>Sun, 06 Nov 2022 10:55:32 +0700</pubDate>
+      
+      <guid>https://n00b-bot.github.io/ast-injection/</guid>
+      <description>Chỉ là note lại những gì đã học được Trong khi đang speedrun OSWE đến những chương cuối của OSWE thì tôi gặp dạng bài Prototype Pollution (dạng bài mà tôi trước giờ chỉ copy &amp;amp; paste payload như 1 thằng n00b , anyway bây giờ vẫn là 1 thằng n00b) và nếu muốn rõ về cách payload hoạt động như thế nào thì tôi lại phải đi học Javascript. Một ngôn ngữ tôi không thích lắm vì logic ảo ma của nó nhưng biết sao giờ chẳng lẽ lại bỏ qua chương này và thế là lại phải học thôi !</description>
+    </item>
+    
+    <item>
+      <title>My Data My Choice - P1. ElasticBurp-NG</title>
+      <link>https://n00b-bot.github.io/elasticburp-ng-part-1/</link>
+      <pubDate>Sun, 04 Sep 2022 16:12:30 +0700</pubDate>
+      
+      <guid>https://n00b-bot.github.io/elasticburp-ng-part-1/</guid>
+      <description>&lt;h1&gt;New series from 0 to 1k stars 🤡🤡&lt;/h1&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;a href=&#34;https://hits.seeyoufarm.com&#34;&gt;&lt;img src=&#34;https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fn00b-bot.github.io%2Felasticburp-ng-part-1%2F&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=go.svg&amp;icon_color=%2300F7F4&amp;title=hits&amp;edge_flat=true&#34;/&gt;&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cách mà OSCP đã tấu hài với tôi😛</title>
+      <link>https://n00b-bot.github.io/oscp/</link>
+      <pubDate>Thu, 16 Jun 2022 15:33:50 +0700</pubDate>
+      
+      <guid>https://n00b-bot.github.io/oscp/</guid>
+      <description>&lt;h1&gt;Lan tỏa tấu hài đi muôn nơi  🙃 🙃&lt;/h1&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;a href=&#34;https://hits.seeyoufarm.com&#34;&gt;&lt;img src=&#34;https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fn00b-bot.github.io%2Foscp%2F&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=go.svg&amp;icon_color=%2300F7F4&amp;title=hits&amp;edge_flat=true&#34;/&gt;&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>
