@@ -17,9 +17,9 @@ AST được sử dụng thường xuyên trong JS ví dụ như: template engin
 ![](template.jpg)
 
 ## Pug Template Engines
-Trong bàhi này ta sẽ đi vào cụ thể một template engines đó là Pug vì đây là một trong nững template engines khá phổ biến của JS. Flow của Pug như sau:
+Trong bài này ta sẽ đi vào cụ thể một template engines đó là Pug vì đây là một trong nững template engines khá phổ biến của JS. Flow của Pug như sau:
 ![](pugast.jpg)
-Đầu tiên chúng ta xem cách khao báo để tạo ra một template.
+Đầu tiên chúng ta xem cách khai báo để tạo ra một template.
 ```
 const pug = require('pug');
 
