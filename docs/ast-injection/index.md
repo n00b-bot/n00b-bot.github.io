@@ -205,3 +205,6 @@ Compiled Function:
 
 Tuy nhiên mình phát hiện ngay cả trong trường hợp trên, ta vẫn có thể khai thác được cũng bằng Prototype Pollution và mình để tự bạn tìm ra câu trả lời cho trường hợp trên. (dễ quá nó chán lắm 😂😂)
 ![](tem.png)
+
+## Tham khảo
+* https://blog.p6.is/AST-Injection/#Pug
