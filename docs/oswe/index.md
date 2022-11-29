@@ -1,9 +1,5 @@
----
-title: "Đôi lời về OSWE"
-date: 2022-11-28T16:17:07+07:00
-draft: false
-tags: ["OSWE"]
----
+# Đôi lời về OSWE
+
 <h1>Finish my year</h1>
 
 <!--more-->
