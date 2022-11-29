@@ -9,7 +9,9 @@
 
 - [x] 
 Gold Medal in IT Network Systems Administration at 11th Vietnam Skills Competition - 2020
-- [x] Achieve OSCP - 2022
+- [x] Achieve OSCP - 6/2022
 - [x] Make [ElasticBurp-NG](https://github.com/n00b-bot/Elasticburp-NG) - 2022
-- [ ] Achieve OSWE
+- [x] Achieve OSWE - 11/2022
+- [ ] Achieve OSEP
+- [ ] Achieve OSED 
 - [ ] Learn more about hacking - <i class="fa-solid fa-infinity"></i>
